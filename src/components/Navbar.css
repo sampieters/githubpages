@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-photo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-right .nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  
+  .navbar-right .nav-link:hover {
+    text-decoration: underline;
+  }
+  
