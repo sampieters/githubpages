@@ -1,0 +1,13 @@
+/* Content.css */
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #000; /* Adjust background to match desktop-like theme */
+    border-radius: 10px;
+    margin: 20px;
+  }
+  

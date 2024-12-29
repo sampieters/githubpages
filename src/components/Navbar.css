@@ -1,37 +1,63 @@
-.navbar {
+/* Navbar.css */
+.mac-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
+    background: #1c1c1e;
     color: white;
+    padding: 5px 15px;
+    font-family: 'San Francisco', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   
-  .navbar-left {
+  .mac-navbar-left {
     display: flex;
     align-items: center;
   }
   
-  .navbar-photo {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .navbar-name {
+  .mac-icon {
     font-size: 18px;
-    font-weight: bold;
+    margin-right: 15px;
   }
   
-  .navbar-right .nav-link {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    font-size: 16px;
+  .mac-navbar-menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   
-  .navbar-right .nav-link:hover {
+  .mac-navbar-menu li {
+    cursor: pointer;
+  }
+  
+  .mac-navbar-menu li:hover {
     text-decoration: underline;
+  }
+  
+  .mac-navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mac-navbar-icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-right: 15px;
+  }
+  
+  .mac-navbar-icons li {
+    cursor: pointer;
+  }
+  
+  .mac-navbar-time {
+    font-size: 14px;
   }
   

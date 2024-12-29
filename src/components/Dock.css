@@ -1,0 +1,25 @@
+/* Dock.css */
+.dock {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+  
+  .dock-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+  }
+  
+  .dock-icon:hover {
+    transform: scale(1.2);
+  }
+  

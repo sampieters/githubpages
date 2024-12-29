@@ -1,26 +1,45 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
-function Navbar() {
+export default function Navbar() {
+  const [currentTime, setCurrentTime] = useState("");
+
+  // Function to format time
+  const formatTime = (date) => {
+    const options = { weekday: 'short', day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' };
+    return date.toLocaleString('en-US', options);
+  };
+
+  // Update the time every second
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(formatTime(new Date()));
+    }, 1000);
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+  }, []);
+
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        <img
-          src="https://via.placeholder.com/40" 
-          alt="Your Name"
-          className="navbar-photo"
-        />
-        <span className="navbar-name">Your Name</span>
+    <div className="mac-navbar">
+      <div className="mac-navbar-left">
+        <span className="mac-icon">&#63743;</span> {/* Apple icon */}
+        <ul className="mac-navbar-menu">
+          <li>Finder</li>
+          <li>Projects</li>
+          <li>Contact</li>
+          <li>Help</li>
+        </ul>
       </div>
-      <div className="navbar-right">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/about" className="nav-link">About</Link>
-        <Link to="/projects" className="nav-link">Projects</Link>
-        <Link to="/contact" className="nav-link">Contact</Link>
+      <div className="mac-navbar-right">
+        <ul className="mac-navbar-icons">
+          {/* Uncomment icons if needed */}
+          {/* <li>🔊</li>
+          <li>📶</li>
+          <li>🔋</li>
+          <li>🔍</li> */}
+        </ul>
+        <span className="mac-navbar-time">{currentTime}</span>
       </div>
-    </nav>
+    </div>
   );
 }
-
-export default Navbar;
