@@ -2,7 +2,6 @@
 import React from 'react';
 import { useState } from 'react';
 import Navbar from './components/Navbar';
-//import Sidebar from './Sidebar';
 import Dock from './components/Dock';
 import './App.css';
 import DraggableComponent from './components/DraggableComponent';

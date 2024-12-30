@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Draggable from "react-draggable";
 import "./DraggableComponent.css";
 
 import map from '../../src/static/map.png'
