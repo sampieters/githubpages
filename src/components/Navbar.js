@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="mac-navbar-left">
         <span className="mac-icon">&#63743;</span> {/* Apple icon */}
         <ul className="mac-navbar-menu">
-          <li>Finder</li>
+          <li><b>Finder</b></li>
           <li>Projects</li>
           <li>Contact</li>
           <li>Help</li>

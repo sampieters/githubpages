@@ -1,0 +1,27 @@
+.draggable-container {
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  /* Map preview image */
+  .map-preview {
+    width: 90%; /* Center image within the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image fits nicely */
+    border-radius: 4px;
+  }
+  
+  /* Draggable header */
+  .draggable-header {
+    margin-top: 10px; /* Spacing from the image */
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  

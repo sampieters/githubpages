@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 //import Sidebar from './Sidebar';
 import Dock from './components/Dock';
 import './App.css';
+import DraggableComponent from './components/DraggableComponent';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -26,6 +27,16 @@ function App() {
       <Navbar />
       <div className='content'>
         <div className="main-layout">
+          <DraggableComponent
+            type="map"
+            title="Projects"
+            content="help">
+          </DraggableComponent>
+          <DraggableComponent
+            type="map"
+            title="CV"
+            content="help">
+          </DraggableComponent>
         </div>
         <Dock />
       </div>
