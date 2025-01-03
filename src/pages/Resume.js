@@ -28,20 +28,21 @@ const Resume = () => {
         <ul>
             <li>
                 <strong>Master of Science in Computer Science</strong>
+                <p>Specialisation Software Engineering</p>
                 <p>University of Antwerp, Antwerp, Belgium</p>
-                <p>2019 - 2022</p>
+                <p>2022 - 2024</p>
                 <p>Grade: Distinction</p>
             </li>
             <li>
                 <strong>Bachelor of Science in Computer Science</strong>
                 <p>University of Antwerp, Antwerp, Belgium</p>
-                <p>2022 - 2024</p>
+                <p>2019 - 2022</p>
                 <p>Grade: Passed</p>
             </li>
             <li>
                 <strong>High School Diploma in Science and Mathematics</strong>
                 <p>H. Pius X-instituut, Antwerp, Belgium</p>
-                <p>2017 - 2022</p>
+                <p>2013 - 2019</p>
             </li>
         </ul>
       </section>
@@ -54,8 +55,10 @@ const Resume = () => {
                 <p>University of Antwerp, Antwerp, Belgium</p>
                 <p>2024 - Present</p>
                 <ul>
-                    <li>Responsibility 1 or achievement</li>
-                    <li>Responsibility 2 or achievement</li>
+                  <li>Provided one-on-one guidance and feedback to students on coursework and projects.</li>
+                  <li>Prepared and graded assignments, exams, and lab exercises to evaluate student performance.</li>
+                  <li>Facilitated group discussions and practical sessions to reinforce theoretical concepts.</li>
+                  <li>Collaborated with professors to update course materials and improve learning outcomes.</li>
                 </ul>
             </li>
             <li>
@@ -63,8 +66,10 @@ const Resume = () => {
                 <p>University of Antwerp, Antwerp, Belgium</p>
                 <p>2023 - 2024</p>
                 <ul>
-                    <li>Responsibility 1 or achievement</li>
-                    <li>Responsibility 2 or achievement</li>
+                    <li>Conducting tutorials and assisting students in understanding course materials.</li>
+                    <li>Grading assignments and providing constructive feedback to support student learning.</li>
+                    <li>Collaborating with assistants and professors to develop educational materials and lesson plans.</li>
+                    <li>Facilitating discussions and engaging with students to enhance their learning experience.</li>
                 </ul>
             </li>
             <li>
@@ -79,10 +84,10 @@ const Resume = () => {
             <li>
                 <strong>Retail Assistant</strong>
                 <p>Carrefour, Wilrijk, Belgium</p>
-                <p>2018 - 2020</p>
+                <p>2017 - 2018</p>
                 <ul>
-                    <li>Assisted customers in selecting and adjusting ski and snowboard equipment.</li>
-                    <li>Creating a friendly and welcoming atmosphere for customers.</li>
+                    <li>Provided customer service by assisting shoppers and addressing inquiries.</li>
+                    <li>Maintained inventory, organized merchandise displays, and ensured store cleanliness.</li>
                 </ul>
             </li>
             <li>
@@ -90,8 +95,8 @@ const Resume = () => {
                 <p>Carrefour, Wilrijk, Belgium</p>
                 <p>2017 - Present</p>
                 <ul>
-                    <li>Assisted customers in selecting and adjusting ski and snowboard equipment.</li>
-                    <li>Creating a friendly and welcoming atmosphere for customers.</li>
+                    <li>Conducted training sessions to enhance individual and team skills in bicycle motocross (BMX).</li>
+                    <li>Provided constructive feedback and motivation to inspire optimal performance.</li>
                 </ul>
             </li>
         </ul>
@@ -99,10 +104,8 @@ const Resume = () => {
 
       <section className="resume-section">
         <h2>Publications</h2>
-        <ul className="publications-list">
-        </ul>
+        <p>Work in progress</p>
       </section>
-
 
       <section className="resume-section">
         <h2>Skills</h2>
