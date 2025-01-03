@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./DraggableComponent.css";
 
 import map from '../../src/static/map.png'
+import file from '../../src/static/file.png'
 
 
-export default function DraggableComponent({ type, content, title, children }) {
+export default function DraggableComponent({ type, title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openWindow = () => setIsOpen(true);
@@ -14,7 +15,13 @@ export default function DraggableComponent({ type, content, title, children }) {
     <>
       {/* Draggable Wrapper */}
       <div className="draggable-container" onDoubleClick={openWindow}>
-        <img src={map} alt="Map" className="map-preview" />
+        {type === "map" && 
+          <img src={map} alt="Map" className="map-preview" />
+        }
+        { type === "file" &&
+          <img src={file} alt="File" className="map-preview" />
+
+        }
         <div className="draggable-header">{title}</div>
       </div>
 
@@ -22,24 +29,21 @@ export default function DraggableComponent({ type, content, title, children }) {
       {isOpen && (
         <div className="modal-overlay" onClick={closeWindow}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={closeWindow}>
-              ✖
-            </button>
-            {type === "map" && (
+            <div className="modal-header">
+              <div className="mac-buttons">
+                <span className="mac-button red" onClick={closeWindow}></span>
+                <span className="mac-button yellow"></span>
+                <span className="mac-button green"></span>
+              </div>
+            </div>
+            <div className="modal-body">
               <div>
-                hello
+                {children}
               </div>
-            )}
-            {type === "file" && (
-              <div className="modal-file">
-                <h2>{title}</h2>
-                <p>{content}</p>
-              </div>
-            )}
+            </div>
           </div>
         </div>
       )}
-
     </>
   );
 }

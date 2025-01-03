@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Dock from './components/Dock';
 import './App.css';
 import DraggableComponent from './components/DraggableComponent';
+import Resume from './pages/Resume';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -26,15 +27,14 @@ function App() {
       <Navbar />
       <div className='content'>
         <div className="main-layout">
-          <DraggableComponent
-            type="map"
-            title="Projects"
-            content="help">
+          <DraggableComponent type="map" title="Projects">
+          <div>Work in progress</div>
           </DraggableComponent>
-          <DraggableComponent
-            type="map"
-            title="CV"
-            content="help">
+          <DraggableComponent type="map" title="Research">
+            <div>Work in progress</div>
+          </DraggableComponent>
+          <DraggableComponent type="file" title="CV">
+            <Resume />
           </DraggableComponent>
         </div>
         <Dock />

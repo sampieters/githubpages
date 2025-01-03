@@ -5,8 +5,7 @@
     flex-direction: column;
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    margin-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 15px;
   }
   
   /* Map preview image */
@@ -25,3 +24,88 @@
     text-align: center;
   }
   
+
+  /* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #2c2c2c; /* Dark gray background */
+  border-radius: 12px; /* Rounded corners */
+  width: auto; /* Fixed width */
+  max-width: 90%; /* Responsive design */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  overflow: hidden; /* Prevent overflow of content */
+  position: relative; /* Position for header buttons */
+  display: flex;
+  flex-direction: column;
+  color: #eaeaea; /* Light text color */
+}
+
+/* Modal Header (Mac Style) */
+.modal-header {
+  background: #1f1f1f; /* Darker gray header */
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #444; /* Subtle border */
+  position: relative;
+}
+
+/* Mac Window Buttons */
+.mac-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.mac-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mac-button.red {
+  background: #ff5f56; /* Red button */
+}
+
+.mac-button.yellow {
+  background: #ffbd2e; /* Yellow button */
+}
+
+.mac-button.green {
+  background: #27c93f; /* Green button */
+}
+
+/* Close Button (Optional) */
+.close-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+  color: #eaeaea; /* Light text */
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 16px;
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #eaeaea; /* Light text */
+  max-height: 70vh; /* Limit the height to 80% of the viewport */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
